@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My SDK Test</title>
+  <link rel="stylesheet" href="/src/assets/styles.css">
+</head>
+<body>
+  <script type="module">
+    import initSDK from '/src/index.js';
+
+    const config = {
+      API_TOKEN: 'your-api-token',
+      data: {},
+      app_id: 123123123,
+      position: 'bottom-left'
+    };
+
+    initSDK(config);
+  </script>
+</body>
+</html>
